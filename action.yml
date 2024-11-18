@@ -36,7 +36,7 @@ runs:
       uses: actions/checkout@v4
       with:
         repository: ${{ inputs.quartz-repo }}
-        ref: $ {{ inputs.quartz-version }}
+        ref: ${{ inputs.quartz-version }}
         path: ${{ inputs.publishing-dir }}
     
     - name: Apply Quartz Setup/Configuration
