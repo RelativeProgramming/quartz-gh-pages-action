@@ -42,9 +42,7 @@ runs:
     - name: Apply Quartz Setup/Configuration
       run: |
         mkdir -p "${CONFIG_DIR}"
-        shopt -s dotglob
-        rsync -a "${CONFIG_DIR}/*" "${QUARTZ_DIR}/"
-        rsync -a "${CONFIG_DIR}/.*" "${QUARTZ_DIR}/"
+        rsync -a "${CONFIG_DIR}/" "${QUARTZ_DIR}/"
       shell: bash
       env:
         CONFIG_DIR: ${{ inputs.quartz-config-dir }}
@@ -53,9 +51,7 @@ runs:
     - name: Copy Markdown notes for publishing
       run: |
         mkdir -p "${NOTES_DIR}"
-        shopt -s dotglob
-        rsync -a "${NOTES_DIR}/*" "${QUARTZ_DIR}/${CONTENT_DIR}/"
-        rsync -a "${NOTES_DIR}/.*" "${QUARTZ_DIR}/${CONTENT_DIR}/"
+        rsync -a "${NOTES_DIR}/" "${QUARTZ_DIR}/${CONTENT_DIR}/"
       shell: bash
       env:
         NOTES_DIR: ${{ inputs.notes-dir }}
