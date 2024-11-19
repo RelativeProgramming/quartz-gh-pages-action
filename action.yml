@@ -56,7 +56,7 @@ runs:
       env:
         NOTES_DIR: ${{ inputs.notes-dir }}
         QUARTZ_DIR: ${{ inputs.publishing-dir }}
-        CONTENT_DIR: $ {{ inputs.quartz-content-dir }}
+        CONTENT_DIR: ${{ inputs.quartz-content-dir }}
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
