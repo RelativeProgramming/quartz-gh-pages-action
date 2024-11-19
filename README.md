@@ -1,5 +1,5 @@
-# Quartz GitHub Pages Publishing Action
-GitHub Action for minimal configuration publishing of [Quartz](https://github.com/jackyzha0/quartz) sites to GitHub Pages.
+# Quartz GitHub Pages Deployment Action
+GitHub Action for minimal configuration deployment of [Quartz](https://github.com/jackyzha0/quartz) sites to GitHub Pages.
 
 See `action.yml` for parameters.
 
@@ -12,7 +12,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - uses: RelativeProgramming/quartz-gh-pages-action@main
+    - uses: RelativeProgramming/quartz-gh-pages-deploy@main
       with:
         quartz-version: v4.4.0
 ```
