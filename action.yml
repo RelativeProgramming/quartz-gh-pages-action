@@ -73,7 +73,10 @@ runs:
       run: npx quartz build
       shell: bash
     
-    - name: Publish to GitHub Pages
+    - name: Upload Pages Artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: ${{ inputs.publishing-dir }}/public
+    
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
