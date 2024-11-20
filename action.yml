@@ -1,5 +1,6 @@
 name: 'Publish Quartz GitHub Pages'
 description: 'Publishes Quartz sites to GitHub Pages'
+author: RelativeProgramming
 inputs:
   notes-dir:
     description: 'Path to the directory that contains the Markdown notes to be published.'

@@ -1,6 +1,9 @@
 # Quartz GitHub Pages Deployment Action
 GitHub Action for minimal configuration deployment of [Quartz](https://github.com/jackyzha0/quartz) sites to GitHub Pages.
 
+For a setup with multiple versions of one documentation see [Versioned Quartz GitHub Pages Deployment Action](https://github.com/RelativeProgramming/versioned-quartz-gh-pages-deploy)
+
+## Usage
 See `action.yml` for parameters.
 
 **Example Configuration:**
